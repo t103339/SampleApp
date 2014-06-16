@@ -13,7 +13,7 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 
 group :development do
-	
+
 	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3', '1.3.8'
 	gem 'rspec-rails', '2.13.1'
@@ -70,6 +70,9 @@ gem 'turbolinks', '1.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '1.0.2'
+
+# Required for rubygems-bundler to eliminate need for "bundle exec"
+gem 'bundler-unload', '>= 1.0.2'
 
 group :doc do
 	# bundle exec rake doc:rails generates the API under doc/api.
