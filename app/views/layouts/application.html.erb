@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sample App | <%= yield(:title) %></title>
+
+		<!-- # method full_title located in the application_helper.rb -->
+		<title><%= full_title(yield(:title)) %></title>
+
+		<!-- # Other Stuff -->
 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 		<%= csrf_meta_tags %>
+
 	</head>
 
 	<body>
